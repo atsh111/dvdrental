@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.dvdrental.web.persistence.model.ActorEntity">
+        <table name="actor" schema="public" catalog="dvdrental"/>
+        <attributes>
+            <id name="actorId">
+                <column name="actor_id" precision="-1"/>
+            </id>
+            <basic name="firstName">
+                <column name="first_name" length="45"/>
+            </basic>
+            <basic name="lastName">
+                <column name="last_name" length="45"/>
+            </basic>
+            <basic name="lastUpdate">
+                <column name="last_update" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
